@@ -10,7 +10,7 @@ type  Mutation{
 type Book{
     id:ID!
     title:String
-    description:String
+    desc:String
     author:String
     price:Float
     pages:Int
@@ -19,7 +19,7 @@ type Book{
 
 input BookInput{
     title:String
-    description:String
+    desc:String
     author:String
     price:Float
     pages:Int

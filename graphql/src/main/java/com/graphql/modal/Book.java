@@ -1,9 +1,6 @@
 package com.graphql.modal;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,7 +14,8 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String title;
-    private String description;
+    @Column(name = "`desc`")
+    private String desc;
     private String author;
     private double price;
     private int pages;

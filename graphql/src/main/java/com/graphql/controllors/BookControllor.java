@@ -26,7 +26,7 @@ public class BookControllor {
         b.setAuthor(book.getAuthor());
         b.setPrice(book.getPrice());
         b.setPages(book.getPages());
-        b.setDescription(book.getDescription());
+        b.setDesc(book.getDesc());
         return bookServices.createBook(b);
     }
 

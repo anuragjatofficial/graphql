@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class BookInput {
     private String title;
-    private String description;
+    private String desc;
     private String author;
     private double price;
     private int pages;
